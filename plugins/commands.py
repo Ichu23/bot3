@@ -318,12 +318,12 @@ async def log_file(bot, message):
     except Exception as e:
         await message.reply(str(e))
 
-@Client.on_message(filters.command("Update"))
+@Client.on_message(filters.command("link", "group", "channel"))
 async def update(bot, message):
     buttons = [[
-        InlineKeyboardButton("⚡️ Main Channel ⚡️", url='https://t.me/cinemacollections')       
+        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/cinemacollections')       
         ],[
-        InlineKeyboardButton("🔰 Main Group 🔰", url='https://t.me/+Y6-YKohqVDA0OTYy')
+        InlineKeyboardButton("ᴍᴀɪɴ ɢʀᴏᴜᴘ ", url='https://t.me/+Y6-YKohqVDA0OTYy')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_chat_action("typing")
