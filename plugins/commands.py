@@ -323,7 +323,10 @@ async def update(bot, message):
     buttons = [[
         InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/cinemacollections')       
         ],[
-        InlineKeyboardButton("ᴍᴀɪɴ ɢʀᴏᴜᴘ ", url='https://t.me/+Y6-YKohqVDA0OTYy')
+        InlineKeyboardButton("ɢʀᴏᴜᴘ 1", url='https://t.me/+Y6-YKohqVDA0OTYy'),
+        InlineKeyboardButton("ɢʀᴏᴜᴘ 2", url='https://t.me/+Y6-YKohqVDA0OTYy')
+        ],[
+        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_chat_action("typing")
