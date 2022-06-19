@@ -10,7 +10,7 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
 from database.users_chats_db import db
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, START_IMAGE_URL
+from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, UPDATE_CMD, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, START_IMAGE_URL
 from utils import get_settings, get_size, is_subscribed, save_group_settings, temp
 from database.connections_mdb import active_connection
 import re
@@ -317,6 +317,21 @@ async def log_file(bot, message):
         await message.reply_document('TelegramBot.log')
     except Exception as e:
         await message.reply(str(e))
+
+@Client.on_message(filters.command("Update"))
+async def update(bot, message):
+    buttons = [[
+        InlineKeyboardButton("⚡️ Main Channel ⚡️", url='https://t.me/cinemacollections')       
+        ],[
+        InlineKeyboardButton("🔰 Main Group 🔰", url='https://t.me/+Y6-YKohqVDA0OTYy')
+    ]]
+    reply_markup = InlineKeyboardMarkup(buttons)
+    await message.reply_chat_action("typing")
+    await message.reply_photo(
+        photo="https://telegra.ph/file/31aedb56ff0f39055cc7b.jpg",
+        caption=script.UPDATE_CMD.format(message.from_user.mention),
+        reply_markup=reply_markup,
+        parse_mode="html")
 
 @Client.on_message(filters.command('delete') & filters.user(ADMINS))
 async def delete(bot, message):
