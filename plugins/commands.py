@@ -324,7 +324,7 @@ async def update(bot, message):
         InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/cinemacollections')       
         ],[
         InlineKeyboardButton("ɢʀᴏᴜᴘ 1", url='https://t.me/+Y6-YKohqVDA0OTYy'),
-        InlineKeyboardButton("ɢʀᴏᴜᴘ 2", url='https://t.me/+Y6-YKohqVDA0OTYy')
+        InlineKeyboardButton("ɢʀᴏᴜᴘ 2", url='https://t.me/+_I9CIanB4Ow4ODJl')
         ],[
         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
