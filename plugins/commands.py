@@ -76,6 +76,8 @@ async def start(client, message: pyrogram.types.Message):
         InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
       [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
+        InlineKeyboardButton('🫂', callback_data='help')
+     ],[
         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
 
@@ -126,6 +128,8 @@ async def start(client, message: pyrogram.types.Message):
         InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
       [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
+        InlineKeyboardButton('🫂', callback_data='help')
+     ],[
         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
         
@@ -320,7 +324,7 @@ async def log_file(bot, message):
     except Exception as e:
         await message.reply(str(e))
 
-@Client.on_message(filters.command('help'))
+@Client.on_message(filters.command('update'))
 async def update(bot, message):
     buttons = [[
         InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+CoOsFjwVvmk5ZmU1')       
