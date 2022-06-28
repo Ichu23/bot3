@@ -325,7 +325,7 @@ async def log_file(bot, message):
         await message.reply(str(e))
 
 @Client.on_message(filters.command('update'))
-async def update(bot, message):
+async def updater(bot, message):
     buttons = [[
         InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+CoOsFjwVvmk5ZmU1')       
         ],[
