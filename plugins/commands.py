@@ -318,7 +318,7 @@ async def log_file(bot, message):
     except Exception as e:
         await message.reply(str(e))
 
-@Client.on_message(filters.command('update'))
+@Client.on_message(filters.command('help'))
 async def update(bot, message):
     buttons = [[
         InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/cinemacollections')       
