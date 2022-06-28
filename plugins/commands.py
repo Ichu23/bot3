@@ -27,8 +27,8 @@ async def start(client, message: pyrogram.types.Message):
         buttons = [[
         InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
       [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('🫂', callback_data='help')
+        InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', callback_data='update'),
+        InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help')
       ],[
         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
@@ -75,8 +75,8 @@ async def start(client, message: pyrogram.types.Message):
         buttons = [[
         InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
       [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('🫂', callback_data='help')
+        InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', callback_data='update'),
+        InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help')
      ],[
         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
@@ -127,8 +127,8 @@ async def start(client, message: pyrogram.types.Message):
         buttons = [[
         InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
       [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('🫂', callback_data='help')
+        InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', callback_data='update'),
+        InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help')
      ],[
         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
