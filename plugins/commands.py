@@ -334,6 +334,7 @@ async def update(bot, message):
         InlineKeyboardButton("ɢʀᴏᴜᴘ 1", url='https://t.me/+Y6-YKohqVDA0OTYy'),
         InlineKeyboardButton("ɢʀᴏᴜᴘ 2", url='https://t.me/+_I9CIanB4Ow4ODJl')
         ],[
+        InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help'),
         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
