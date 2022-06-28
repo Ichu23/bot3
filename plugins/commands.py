@@ -321,7 +321,9 @@ async def log_file(bot, message):
 @Client.on_message(filters.command('help'))
 async def update(bot, message):
     buttons = [[
-        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/cinemacollections')       
+        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+CoOsFjwVvmk5ZmU1')       
+        ],[
+        InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ ", url='https://t.me/cinemacollections')
         ],[
         InlineKeyboardButton("ɢʀᴏᴜᴘ 1", url='https://t.me/+Y6-YKohqVDA0OTYy'),
         InlineKeyboardButton("ɢʀᴏᴜᴘ 2", url='https://t.me/+_I9CIanB4Ow4ODJl')
