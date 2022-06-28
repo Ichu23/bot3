@@ -552,6 +552,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
           )
+       
+    elif query.data == "update":
+        buttons = buttons = [[
+        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+CoOsFjwVvmk5ZmU1')       
+        ],[
+        InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ ", url='https://t.me/cinemacollections')
+        ],[
+        InlineKeyboardButton("ɢʀᴏᴜᴘ 1", url='https://t.me/+Y6-YKohqVDA0OTYy'),
+        InlineKeyboardButton("ɢʀᴏᴜᴘ 2", url='https://t.me/+_I9CIanB4Ow4ODJl')
+        ],[
+        InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help'),
+        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+       ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.delete()
+        await query.message.reply(
+            text=script.UPDATE_CMD.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode='html',
+            disable_web_page_preview=True
+        )
+
     elif query.data == "about":
         await query.message.delete()
         await query.message.reply_sticker(
