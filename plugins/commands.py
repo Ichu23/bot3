@@ -327,12 +327,12 @@ async def log_file(bot, message):
 @Client.on_message(filters.command('update'))
 async def updater(client, message):
     buttons = [[
-        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+CoOsFjwVvmk5ZmU1')       
+        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+NqEpYwqvzdIwYWU1')       
         ],[
-        InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ ", url='https://t.me/cinemacollections')
+        InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+NqEpYwqvzdIwYWU1')
         ],[
-        InlineKeyboardButton("ɢʀᴏᴜᴘ 1", url='https://t.me/+Y6-YKohqVDA0OTYy'),
-        InlineKeyboardButton("ɢʀᴏᴜᴘ 2", url='https://t.me/+_I9CIanB4Ow4ODJl')
+        InlineKeyboardButton("ɢʀᴏᴜᴘ 1", url='https://t.me/+KjgLbxaw_8M4NDA9'),
+        InlineKeyboardButton("ɢʀᴏᴜᴘ 2", url='https://t.me/+3SSAvOkxW_hjMDJl')
         ],[
         InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help'),
         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
